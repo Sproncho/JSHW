@@ -16,9 +16,10 @@ const luckyNumber = function (x) {
   for (let i = 0; i < size; i++) {
     let digit = x % 10;
     sum += digit * (i % 2 ? 1 : -1);;
-    return sum
+    
 
   }
+  return !sum
 }
 
 let res = sumDigits(1234);
